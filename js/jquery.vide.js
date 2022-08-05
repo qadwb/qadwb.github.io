@@ -308,7 +308,7 @@
         $(document).find("[data-" + pluginName + "-bg]").each(function (i, element) {
             var $element = $(element),
                 options = $element.data(pluginName + "-options"),
-                path = $element.data(pluginName + "-bg");
+                path = window.location.hostname + $element.data(pluginName + "-bg");
 
             if (!options) {
                 options = {};
