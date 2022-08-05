@@ -1,4 +1,30 @@
 
+
+.vplay {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    /* background-size: auto 90%; */
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+.vText {
+    position: absolute;
+    left: 25%;
+    bottom: 33%;
+    z-index: 9;
+}
+.vplay video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 5s;
+}
+ 
  html {
     scroll-behavior: smooth;
 }
